@@ -23,10 +23,10 @@ pip package manager
 Installation Steps
 
 Install dependencies
-   pip install -r requirements.txt
+pip install -r requirements.txt
 
 Run the Streamlit application
-   streamlit run app/app.py
+streamlit run app/app.py
 
 Access the dashboard
 The app will automatically open in your browser.
