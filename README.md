@@ -1,10 +1,10 @@
 # Mumbai Local Train Crowd Density Prediction System
----
+
 
 A production-ready Machine Learning + Streamlit dashboard that predicts crowd density across major Mumbai local train stations and provides intelligent travel-time recommendations.
 
 ## App Structure
----
+
 
 This dashboard provides:
 
@@ -17,7 +17,7 @@ This dashboard provides:
 All visualizations use **Plotly and Seaborn** for interactive, production-grade insights.
 
 ## Setup & Installation
----
+
 ### Prerequisites
 
 - Python 3.8 or higher
@@ -29,7 +29,7 @@ All visualizations use **Plotly and Seaborn** for interactive, production-grade 
 pip install -r requirements.txt
 
 2. **Run the Streamlit application**
- - streamlit run app/app.py
+ streamlit run app/app.py
 
 3. **Access the dashboard**
 - The app will automatically open in your browser.
@@ -50,69 +50,70 @@ Engineered features include:
 - Morning vs Evening flag
 - Encoded station, line, and day features
 
-Model
-Algorithm: Random Forest Classifier
-Hyperparameters:
+### Model
+**Algorithm**: Random Forest Classifier, Logistic Regression
+
+**Hyperparameters**:
 n_estimators = 150
 max_depth = 8
 min_samples_leaf = 5
 class_weight = "balanced"
 
-Validation: Train-test split with stratification
+**Validation:** Train-test split with stratification
 
-Performance Metrics: Accuracy, Precision, Recall, F1-score, Confusion Matrix, Classification Report
+**Performance Metrics:** Accuracy, Precision, Recall, F1-score, Confusion Matrix, Classification Report
 
-Model Comparison:
+### Model Comparison:
 Logistic Regression
 Random Forest Classifier
 Final Selection: Random Forest (higher accuracy, better recall for Extreme class, improved stability on encoded features)
 
-Risk Alert System
+## Risk Alert System
 Binary Risk Flag:
-1 → High / Extreme crowd
-0 → Low / Medium crowd
+- 1 → High / Extreme crowd
+- 0 → Low / Medium crowd
 Enables:
-Early warning system
-Peak-hour risk identification
-Safety-focused travel suggestions
+- Early warning system
+- Peak-hour risk identification
+- Safety-focused travel suggestions
 
-Travel Recommendation Engine
+## Travel Recommendation Engine
 Provides:
-Best low-crowd hours
-Off-peak alternatives
-Safer travel windows
+- Best low-crowd hours
+- Off-peak alternatives
+- Safer travel windows
 
-Interactive Elements
-Station, day, and hour selection panel
-Real-time crowd prediction
-Color-coded crowd level display
-Dynamic risk alerts
-Interactive Plotly visualizations
-Responsive dashboard layout
+## Interactive Elements
+- Station, day, and hour selection panel
+- Real-time crowd prediction
+- Color-coded crowd level display
+- Dynamic risk alerts
+- Interactive Plotly visualizations
+- Responsive dashboard layout
 
-Usage
-Navigation
-1. Sidebar: Select station, day, and hour
-2. Prediction Panel: View crowd level & recommendation
-3. Insights Section: Analyze crowd distribution & comparisons
-4. Model Performance: Evaluate classification metrics
-5. Feature Importance: Understand key crowd drivers
+## Usage
+**Navigation**
+1. **Sidebar:** Select station, day, and hour
+2. **Prediction Panel:** View crowd level & recommendation
+3. **Insights Section:** Analyze crowd distribution & comparisons
+4. **Model Performance:** Evaluate classification metrics
+5. **Feature Importance:** Understand key crowd drivers
 
-Making Predictions
+**Making Predictions**
 1. Select station
 2. Select day of week
 3. Select hour
 4. Click "Predict Crowd Level"
 5. View crowd class, risk alert, and travel recommendation
 
-Technical Details
-Pipeline: End-to-end ML workflow (Data → Feature Engineering → Training → Deployment)
-Visualization: Plotly + Seaborn
-Deployment: Streamlit-based real-time dashboard
-Model Saving: joblib
-Version Control: Git-managed project
+### Technical Details
+- Pipeline: End-to-end ML workflow (Data → Feature Engineering → Training → Deployment)
+- Visualization: Plotly + Seaborn
+- Deployment: Streamlit-based real-time dashboard
+- Model Saving: joblib
+- Version Control: Git-managed project
 
-File Structure
+## File Structure
 mumbai-local-train-crowd-density-prediction/
 │
 ├── README.md
@@ -136,29 +137,30 @@ mumbai-local-train-crowd-density-prediction/
 ├── requirements.txt
 └── .gitignore
 
-Dependencies
+## Dependencies
 Key packages:
-streamlit → Dashboard framework
-pandas → Data manipulation
-numpy → Numerical processing
-scikit-learn → Machine learning
-seaborn / matplotlib → Visualization
-plotly → Interactive charts
-joblib → Model persistence
+- streamlit → Dashboard framework
+- pandas → Data manipulation
+- numpy → Numerical processing
+- scikit-learn → Machine learning
+- seaborn / matplotlib → Visualization
+- plotly → Interactive charts
+- joblib → Model persistence
 
-Notes
-Model is trained locally
-Synthetic dataset based on realistic assumptions
-No external APIs required
-Fully reproducible project
-Production-ready structure
+## Notes
+- Model is trained locally
+- Synthetic dataset based on realistic assumptions
+- All preprocessing matches the original notebook exactly
+- No external APIs or services required 
+- Fully reproducible project
+- Production-ready structure
 
-Use Cases
-Public transport planning
-Crowd risk monitoring
-Smart city research
-Travel-time optimization
-Crowd simulation analysis
+## Use Cases
+- Public transport planning
+- Crowd risk monitoring
+- Smart city research
+- Travel-time optimization
+- Crowd simulation analysis
 
 
 
