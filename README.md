@@ -36,7 +36,7 @@ pip install -r requirements.txt
 - Default URL: http://localhost:8501
 
 ## Features
----
+
 **Data Creation**
 - Synthetic dataset simulating Mumbai local train crowd behavior
 
@@ -114,6 +114,7 @@ Provides:
 - Version Control: Git-managed project
 
 ## File Structure
+```
 mumbai-local-train-crowd-density-prediction/
 │
 ├── README.md
@@ -136,6 +137,7 @@ mumbai-local-train-crowd-density-prediction/
 │   └── reports/
 ├── requirements.txt
 └── .gitignore
+```
 
 ## Dependencies
 Key packages:
