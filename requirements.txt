@@ -1,1 +1,11 @@
-streamlit
+streamlit → Dashboard framework
+
+pandas → Data manipulation
+
+numpy → Numerical processing
+
+scikit-learn → Machine learning
+
+seaborn / matplotlib → Visualization
+
+joblib → Model saving & loading 
